@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "bhavesh",
+      "age": "20",
+      "date_of_birth": "15-07-2000",
+      "state_of_residence": "wathoda",
+      "address": "plot no 3",
+      "pincode": "440009"
+    },
+    {
+      "name": "",
+      "age": "",
+      "date_of_birth": "",
+      "state_of_residence": "",
+      "address": "",
+      "pincode": "878",
+      "id": "et1Qsb5"
+    },
+    {
+      "name": "BAHBH",
+      "age": "876",
+      "date_of_birth": "0006-07-06",
+      "state_of_residence": "867",
+      "address": "TY7T7YT",
+      "pincode": "878",
+      "id": "VNoxOpY"
+    }
+  ]
+}
