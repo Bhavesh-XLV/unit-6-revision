@@ -1,0 +1,38 @@
+{
+  "country": [
+    {
+      "id": 1,
+      "country": "India"
+    },
+    {
+      "id": 2,
+      "country": "Sri-Lanka"
+    },
+    {
+      "id": 3,
+      "country": "U.S"
+    },
+    {
+      "country": "USA",
+      "id": 4
+    },
+    {
+      "country": "bangaldesh",
+      "id": 5
+    }
+  ],
+  "City": [
+    {
+      "country": "India",
+      "city": "banglore",
+      "population": "98",
+      "id": 6
+    },
+    {
+      "country": "",
+      "city": "",
+      "population": "8",
+      "id": 8
+    }
+  ]
+}
