@@ -1,0 +1,46 @@
+{
+  "country": [
+    {
+      "id": 1,
+      "country": "India"
+    },
+    {
+      "id": 2,
+      "country": "Sri-Lanka"
+    },
+    {
+      "id": 3,
+      "country": "U.S"
+    },
+    {
+      "country": "USA",
+      "id": 4
+    }
+  ],
+  "City": [
+    {
+      "country": "India",
+      "city": "Nagpur",
+      "population": "1000000",
+      "id": 4
+    },
+    {
+      "country": "India",
+      "city": "banglore",
+      "population": "9898",
+      "id": 5
+    },
+    {
+      "country": "India",
+      "city": "banglore",
+      "population": "98",
+      "id": 6
+    },
+    {
+      "country": "bh",
+      "city": "bhbhjb",
+      "population": "97979879009",
+      "id": 7
+    }
+  ]
+}
