@@ -1,0 +1,64 @@
+{
+  "boo": [
+    {
+      "id": 1,
+      "Name": "Boo",
+      "City": "Nagpur",
+      "Address": "Plot ni 3",
+      "Capacity": "5",
+      "Cost_per_day": "500",
+      "Verified": "Yes",
+      "Rating": 4.5
+    },
+    {
+      "Name": "bhbh",
+      "City": "bhb",
+      "Address": "hbhbhb",
+      "Capacity": "6",
+      "Cost_per_day": "76767",
+      "Verified": "bhbh",
+      "Rating": "1.6",
+      "id": 2
+    },
+    {
+      "Name": "bhbh",
+      "City": "bhb",
+      "Address": "hbhbhb",
+      "Capacity": "6",
+      "Cost_per_day": "76767",
+      "Verified": "bhbh",
+      "Rating": "5",
+      "id": 3
+    },
+    {
+      "Name": "bhbh",
+      "City": "bhb",
+      "Address": "hbhbhb",
+      "Capacity": "6",
+      "Cost_per_day": "76767",
+      "Verified": "bhbh",
+      "Rating": "2",
+      "id": 4
+    },
+    {
+      "Name": "bhbh",
+      "City": "bhb",
+      "Address": "hbhbhb",
+      "Capacity": "6",
+      "Cost_per_day": "76767",
+      "Verified": "bhbh",
+      "Rating": "3",
+      "id": 5
+    },
+    {
+      "Name": "bhbh",
+      "City": "bhb",
+      "Address": "hbhbhb",
+      "Capacity": "6",
+      "Cost_per_day": "76767",
+      "Verified": "bhbh",
+      "Rating": "1",
+      "id": 6
+    }
+  ]
+}
