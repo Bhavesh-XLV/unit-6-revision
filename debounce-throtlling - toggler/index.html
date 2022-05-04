@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dedounce-Throttling</title>
+  </head>
+  <body>
+    <input id="debounce" placeholder="debounce" />
+    <input id="throttling" placeholder="Throttling" />
+    <button id="toggler">Off</button>
+  </body>
+</html>
+
+<script>
+  // debouncing
+  let c = 0;
+  let debouncing;
+  const beterExpensive = () => {
+    console.log("hi");
+  };
+  const debouncer = (func, delay) => {
+    return function () {
+      console.log(++c);
+      debouncing = clearTimeout(debouncing);
+      debouncing = setTimeout(() => {
+        // this will work but if we pass any argument then it will fail
+        // beterExpensive();
+
+        // so rectify this we can do this
+        func.apply(this, arguments);
+      }, delay);
+    };
+  };
+
+  document
+    .getElementById("debounce")
+    .addEventListener("keypress", debouncer(beterExpensive, 1000));
+
+  //  throttling
+  let e = 0;
+  function expensive() {
+    console.log("hello");
+  }
+  function throttle(func, wait) {
+    let flag = true;
+    return function () {
+      console.log(++e);
+      if (flag == true) {
+        // this will work but if we pass any argument then it will fail
+        // expensive();
+
+        // so rectify this we can do this
+        func.apply(this, arguments);
+        flag = false;
+        setTimeout(() => {
+          flag = true;
+        }, wait);
+      }
+    };
+  }
+  document
+    .getElementById("throttling")
+    .addEventListener("keypress", throttle(expensive, 1000));
+
+  // toggler
+  function toggler() {
+    let index = -1;
+    let arr = arguments;
+    return function () {
+      index = index + 1;
+      if (index == arr.length) {
+        index = 0;
+      }
+      if (arr[index] == "on") {
+        document.getElementById("toggler").style.backgroundColor = "red";
+        document.getElementById("toggler").textContent = "on";
+      } else {
+        document.getElementById("toggler").style.backgroundColor = "blue";
+        document.getElementById("toggler").textContent = "off";
+      }
+    };
+  }
+
+  document.getElementById("toggler").style.backgroundColor = "blue";
+  const toggle = toggler("on", "off");
+
+  document.getElementById("toggler").addEventListener("click", toggle);
+</script>
